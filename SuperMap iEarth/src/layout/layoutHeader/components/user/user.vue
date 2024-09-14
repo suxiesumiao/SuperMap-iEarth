@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts" setup>
-import Authenticate from "@ispeco/authentication-sdk"; // 超图iportal第三方库
+// import Authenticate from "@ispeco/authentication-sdk"; // 超图iportal第三方库
 import { computed } from "vue";
 import { useMessage } from "naive-ui";
 import { IportalStoreCreate } from "@/store/iportalManage/index";
@@ -33,6 +33,7 @@ const message = useMessage();
 
 // 登录页面
 function showLoginBox() {
+  return
   const authInstance = new Authenticate({
     loginOptions: {
       theme: "dark",
